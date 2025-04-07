@@ -34,9 +34,11 @@ header div img {
 }
 header nav ul {
   margin: 0;
+  list-style-type: none;
 }
 header nav li {
-  list-style: none;
+  display: inline-block;
+  margin-right: 10px;
 }
 header nav li a {
   color: white;
@@ -199,6 +201,8 @@ footer a {
   color: fuchsia;
 }
 
+/*VERSIONE SCHERMO MEDIO*/
+
 @media screen and (min-width: 768px) {
   header div p {
     font-size: 20px;
@@ -282,5 +286,89 @@ footer a {
 
   footer {
     font-size: 20px;
+  }
+}
+
+/*VERSIONE SCHERMO DESKTOP (1200px)*/
+
+@media screen and (min-width: 1200px) {
+  header {
+    text-align: start;
+  }
+
+  header div,
+  header p,
+  header nav {
+    display: inline-block;
+  }
+
+  header div img {
+    margin-bottom: 0;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, 15%);
+  }
+
+  header p {
+    vertical-align: middle;
+    font-size: 20px;
+  }
+
+  header nav {
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-120%, -25%);
+  }
+
+  main article table {
+    width: 80%;
+  }
+
+  main article #iframeAndSectionContainer {
+    text-align: center;
+    margin-bottom: 40px;
+  }
+
+  main article iframe,
+  main article section {
+    display: inline-block;
+    width: 45%;
+    height: 200px;
+    margin: 0;
+    box-sizing: border-box;
+    vertical-align: top;
+  }
+
+  main article iframe {
+    margin-right: -4px;
+  }
+
+  main article section {
+    border-radius: 20px;
+  }
+
+  #littleSectionsDiv {
+    text-align: center;
+    background-color: white;
+    border: none;
+    width: 100%;
+    padding: 0;
+    margin: auto;
+  }
+
+  #littleSectionsDiv div {
+    display: inline-block;
+    width: 30%;
+    height: 150px;
+    text-align: left;
+    margin-right: -6px;
+  }
+
+  footer address {
+    width: 65%;
+    margin: auto;
+    padding-bottom: 40px;
   }
 }
